@@ -13,15 +13,10 @@ module.exports = merge(commonWebpackConfig, {
   output: {
     path: path.join(__dirname, '../dist/'),
     filename: '[name].[chunkhash:8].js',
-    publicPath: '/',
+    publicPath: './',
     libraryTarget: 'umd',
     globalObject: 'window',
     jsonpFunction: 'webpackjsonp_net_component',
-  },
-  externals: {
-    react: 'react',
-    'react-dom': 'react-dom',
-    'styled-components': 'styled-components',
   },
   optimization: {
     runtimeChunk: true,
