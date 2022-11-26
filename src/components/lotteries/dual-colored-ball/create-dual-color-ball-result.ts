@@ -1,7 +1,7 @@
 import { random } from 'lodash';
 
 export interface IDualColorBallResult {
-  /** 红球 6 个数字，范围 [1,33] */
+  /** 红球 6 个数字，范围 [1,33]。按大小顺序给出。 */
   red: [number, number, number, number, number, number];
   /** 蓝球 1 个数字，范围 [1,16] */
   blue: [number];
